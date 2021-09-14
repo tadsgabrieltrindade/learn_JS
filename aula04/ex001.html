@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX001</title>
+    <script>
+        function alterar() {
+            document.getElementById("titulo").style.color = 'black'
+            document.getElementById("titulo").innerHTML = "Padronização do JavaScript"
+        }
+
+        function voltar() {
+            document.getElementById("titulo").style.color = 'white'
+            document.getElementById("titulo").innerHTML = "Aula 04 - Primeiro script em Js"
+        }
+    </script>
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: normal 20px Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="titulo">Aula 04 - Primeiro script em Js</h1>
+    <p>EcmaScript é o Javascript padronizado</p>
+    <input type="button" value="Clique aqui para alterar" onclick="alterar()">
+    <input type="button" value="Clique aqui para voltar" onclick="voltar()">
+</body>
+
+</html>
